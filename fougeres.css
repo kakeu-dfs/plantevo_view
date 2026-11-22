@@ -1,0 +1,93 @@
+*{
+    box-sizing:border-box
+}
+body{
+    font-family:"Poppins", Arial, sans-serif;
+    background-color:#e6e6e6e6;
+    color:#1a1a1a;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmaax(0,1fr);
+    grid-template-areas: "menu menu" "titre titre" "texte photo" "cycle photo";
+    align-items:start;
+   
+}
+nav{
+    grid-area:menu;
+    background-color:#2eb84b;
+}
+.h2fougere{
+    text-align:center;
+    font-size:2.2rem;
+    font-weight:500;
+    padding:1rem
+}
+.h2fougere a{
+    color: #14502a;
+    text-decoration:none;
+}
+.h2fougere2{
+    grid-area:titre;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/ryank14-fern-7721323.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:280px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    font-size:4rem;
+    font-weight:bold;
+    width:100%;
+
+}
+.pfougere{
+    grid-area:texte;
+    padding:1rem 1.2rem;
+    font-size: 1.05rem;
+    font-weight:600;
+    line-height:1.7;
+    background-color:#e6e6e6
+
+}
+.divfougere{
+    grid-area:cycle;
+    background-color:#14502a;
+    padding:2rem 1.5rem 1rem;
+    text-align:center;
+    width:100%;
+    
+}
+.divfougere img{
+    width:92%;
+    height:auto;
+    background:white;
+    border-radius:36px;
+   
+}
+.p2fouger{
+color:white;
+font-weight:300;
+font-size:1.2rem;
+margin-top:0.8rem;
+}
+.divphoto{
+    grid-area:photo;
+    background-color:#14502a;
+    color:white
+}
+.divphoto img{
+    display:block;
+    width:100%;
+    height: auto;
+     max-height:600px;
+    
+}
+.pphoto{
+    padding:0.5rem 0.2rem;
+    font-weight:600;
+    line-height:1.5;
+
+}
+@medi({
+
+}
