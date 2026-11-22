@@ -5,15 +5,16 @@
 }
 body{
     
-    font-family: "Poppins" sans-serif, Arial;
+    font-family: "Poppins", sans-serif, Arial;
     background-color:#14502a;
-    display: flex;
     line-height: 1.5;
 }
 .div1{
+    
     background:#2e7d1e
 }
-nav{ display: flex;
+.div1 nav{ 
+    display:flex;
     align-items:center;
     gap: 1rem;
     padding:0.5rem 1.5rem
@@ -25,20 +26,22 @@ nav{ display: flex;
 }
 
 .div1 h1{
-    font-size: 3.5rem;
+    font-size: 5rem;
     color: white;
     font-weight:500
 }
 .h3{
-    background-image: linear-gradient(rgba( 0,0,0,0.35), rgba(0,0,0,0.35)) url(images/imagedefond.jpg);
+    background-image: linear-gradient(rgba( 0,0,0,0.35), rgba(0,0,0,0.35)),url(images/imagedefond.jpg);
     background-size: cover;
     background-position:center;
     min-height:320px;
     display: flex;
     align-items: center;
-    padding:0, 12%;
+    padding:0 12%;
     font-weight:600;
-    text-shadow:0 2px 6px black;
+    font-size:2rem;
+    color:white;
+    text-shadow:0 2px 6px white;
     
 } 
 .div2{
@@ -51,11 +54,12 @@ nav{ display: flex;
     background-color:#1b5e2f
 }
 #p{
+    color:white;
     grid-area:texte;
-    font-size:0.95rem;
+    font-size:1.5rem;
     font-weight:600
 }
-.bouton{
+.bouton a{
     grid-area:bouton;
     background-color:#a5d6a7;
     color: white;
@@ -64,18 +68,93 @@ nav{ display: flex;
     border-radius:15px;
     font-size:1.1rem;
     cursor:pointer;
+    text-decoration:none;
 }
+
 .img1{
     grid-area:image;
     width:100%;
     height:auto;
     background-color:white
 }
-.div1{
-    background-color: #2E7D32;
-}
+
 .phyloge{
-    background-color:green;
-    width:100%;
-    height:auto;
+    background-color:#1b5e2f;
+    width:34%;
+    margin: 0rem 0rem 0 auto;
+    font-weight:600;
+    color:white;
+
+}
+.titregroupe{
+    text-align:center;
+    font-size:2.2rem;
+    padding:1.5rem 0 0.5rem;
+    font-weight:bold;
+    color:white;
+}
+.groupes{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:3rem 2rem;
+    max-width:900px;
+    margin:0 auto;
+    padding:2rem
+}
+.algues,.mousses,.fougeres,.coniferes,.graminees, .dicotyledones{
+    height:240px;
+    background-size:cover;
+    background-position:center;
+    border-radius:12px;
+    overflow:hidden
+}
+.groupes a{
+    display:flex;
+    align-items:flex-end;
+    height:100%;
+    padding:0.8rem;
+    color: white;
+    font-size:1.4rem;
+    font-weight:700;
+    text-decoration:none;
+    text-shadow:0 1px 5px black;
+}
+.groupes a{
+    background-color:rgba(0,0,0,0.25);
+}
+.algues{
+    background-image:url(images/algues.jpg)
+}
+.mousses{
+    background-image:url(images/Mousses.jpg)
+}
+.fougeres{
+    background-image:url(images/fougère.webp)
+}
+.coniferes{
+    background-image:url(images/conifere.v.jpg)
+}
+.graminees{
+    background-image:url(images/graminées.jpg)
+}
+.dicotyledones{
+    background-image:url(images/angiospermes.jpg)
+}
+@media(max-width:700px){
+    .div1 h1{
+        font-size:2rem;
+    }
+    .div2{
+        grid-template-columns:1fr;
+        grid-template-areas: "texte"
+         "bouton"
+         "image"
+    }
+    .phyloge{
+        width:auto;
+        margin:0.rem 1rem 0;
+    }
+    .groupes{
+        grid-template-columns:1fr;
+    }
 }
