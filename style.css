@@ -1,47 +1,75 @@
+*{
+    margin:o;
+    padding:0;
+    box-sizing: border-box;
+}
 body{
-    margin: o;
-    font-family: sans-serif, Arial;
-    background-color:#eeeeee;
+    
+    font-family: "Poppins" sans-serif, Arial;
+    background-color:#14502a;
     display: flex;
-    flex-direction: column;
+    line-height: 1.5;
 }
-nav{
+.div1{
+    background:#2e7d1e
+}
+nav{ display: flex;
+    align-items:center;
+    gap: 1rem;
+    padding:0.5rem 1.5rem
     
     
 }
-h1{
-    font-size: 3rem;
+.div1 img{
+    height:60px;
+}
+
+.div1 h1{
+    font-size: 3.5rem;
     color: white;
-    padding: 10px
+    font-weight:500
 }
 .h3{
-    color: #eeeeee; 
-    height:300px;
-    width: 100%;
-    background-image: url(images/imagedefond.jpg);
+    background-image: linear-gradient(rgba( 0,0,0,0.35), rgba(0,0,0,0.35)) url(images/imagedefond.jpg);
+    background-size: cover;
+    background-position:center;
+    min-height:320px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding:0, 12%;
+    font-weight:600;
+    text-shadow:0 2px 6px black;
+    
 } 
+.div2{
+    display:grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-areas:"texte bouton image";
+    align-items:center;
+    gap:1.5rem;
+    padding:2rem;
+    background-color:#1b5e2f
+}
 #p{
-    background-color:green;
-    color: white;
-    margin-left:15px;
-    font-size:1rem;
-
+    grid-area:texte;
+    font-size:0.95rem;
+    font-weight:600
 }
 .bouton{
-    border: 1px solid green;
-    background-color:#81C784;
-    width:200px;
-    height:50px;
-    font-weight:bold;
-    border-radius: 12px;
+    grid-area:bouton;
+    background-color:#a5d6a7;
+    color: white;
     text-align:center;
-
+    padding:1rem;
+    border-radius:15px;
+    font-size:1.1rem;
+    cursor:pointer;
 }
 .img1{
-    width:100px;
-    height:100px
+    grid-area:image;
+    width:100%;
+    height:auto;
+    background-color:white
 }
 .div1{
     background-color: #2E7D32;
