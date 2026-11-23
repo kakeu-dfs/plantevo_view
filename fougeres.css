@@ -42,7 +42,7 @@ nav{
 }
 .pfougere{
     grid-area:texte;
-    padding:1rem 1.2rem;
+    padding:1rem auto;
     font-size: 1.05rem;
     font-weight:600;
     line-height:1.7;

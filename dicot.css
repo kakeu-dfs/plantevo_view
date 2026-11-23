@@ -1,31 +1,107 @@
+*{
+    margin:0;
+    
+}
 body {
-  margin: 0;                     
-  background-color: #0b5a30;      
+  color: white;                     
+  background-color: #14502a;      
   font-family: Poppins, Arial, sans-serif;
 }
-.h2dicot {
-  margin: 0;
-  background-color: #2eb84b;                      
+nav{
+    background-color:#2eb84b
+}
+.h2dicot {  
+    width:100%;                   
   text-align: center;            
   font-weight: 500; 
   font-size:2.2rem ; 
   padding: 2rem;  
-  width: 100%
 }
 .h2dicot a {                     
-  color: black;
+  color: #14502a;
   text-decoration: none; 
 }
+
 .h2dicot2 {
   margin: 0;
   height: 100px;
-  line-height: 100px;             
-  text-align: center;
-  color: white;
-  background-image: url(images/angiospermes.jpg);  
-  background-size: cover;         
-  background-position: center;
-  font-size:2.2rem;
-  font-weight:500;
+  min-height: 260px;             
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/angiospermes.jpg);  
+  background-size: cover;
+   background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;         
+  font-size:4rem;
+  font-weight:600;
 
+}
+.contenu{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    align-items:start;
+}
+.pdicot{
+    width:90%;
+    background-color:#e6e6e6;
+    color:#1a1a1a;
+    padding:2rem 3rem;
+    font-size:1.05rem;
+    font-weight:600;
+    line-height:1.7;
+}
+.gauche img{
+    width:65%;
+    max-width:100%;
+    height:auto;
+    margin:1.5rem  9rem auto;
+    border-radius:30px;
+    background-color:white;
+
+}
+.gauche{
+    width:100%;
+    margin:0.6rem auto 0;
+    font-weight:300;
+    font-size:0.9rem;
+    
+}
+.p2dicot{
+    width:100%;
+    margin:0.6rem 10rem 0;
+    font-weight:300;
+    font-size:0.9rem;}
+.droite{
+    padding:1.5rem 2.5rem;
+
+}
+.droite img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:560px;
+    object-fit:cover;
+    border-radius:10px
+}
+.droitr, .p2dicot{
+    margin-top:1rem;
+    font-weight:600;
+    line-height:1.7;
+}
+@media(max-width:700px){
+    .contenu{
+        grid-template-columns:1fr;
+    }
+    .h2dicot{
+        font-size:1.5rem;
+    }
+    .h2dicot2{
+        font-size:2rem;
+    }
+    .pdicot{
+        padding:1.5rem;
+    }
+    .droite{
+        padding:1.5rem;
+    }
 }
